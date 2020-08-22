@@ -1,7 +1,7 @@
 body {
-	font-family: 'Montserrat', sans-serif;
-	font-size: 20px;
-	color: white;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	color: black;
 	margin: 0;
 }
 
@@ -11,85 +11,150 @@ div, p, input, button, form, span, a, ul, li {
 
 h1, h2, h3, h4, h5, h6 {
 	margin: 0;
-	font-family: 'Montserrat', sans-serif;;
+	font-family: 'Ubuntu', sans-serif;
 	font-weight: 700;
+}
+
+.wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items:center;
 }
 
 .container {
-	width: 1130px;
-	margin-left: 120px;
-	margin-right: 77px;
+	width: 1171px;
+	margin: 0 auto;
 }
 
-.header {
-	padding-top: 64px;
+.big {
+	font-size: 59px;
 }
 
 .title {
-	font-size: 44px;
-	display: inline;
-	padding-right: 89px;
+	width: 570px;
+	font-size: 37px;
+	color: white;
 }
 
-.kontakt{
-	display: inline;
+.intro {
+	color: white;
+	width: 410px;
+	padding-bottom: 40px;
 }
-
-p {
-	display: inline;
-}
-
-.header-txt {
-	padding-left: 45px;
-}
-
-.kontakt-logo {
-	padding-left: 45px;
-}
-
-.section-title {
-	padding-top: 175px;
-	font-size: 40px;
-}
-
-
 
 .btn {
-	padding:10px 40px;
-	font-weight: 700;
-	color: black;
-	font-size: 28px;
-	background: #F5E01E;
+	color: #2e2a1b;
+	background: #ffd429;
+	padding: 22px 24px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 900;
 	text-decoration: none;
+	text-align: center;
+	width: 100%;
+	border: 0;
+}
+
+btn.hover {
+	color: white;
+	transition: all 0.5s ease;
+}
+
+h2 {
+	text-align: center;
+	font-size: 30px;
+}
+
+h3 {
+	font-size: 19px;
+	padding-top: 24px;
+	padding-bottom: 10px;
+}
+
+
+.times {
+	width: 285px;
 	text-align: center;
 }
 
-.menu {
+.time-text {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 15px;
+	margin: 0;
+}
+
+.dream {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end
+}
+
+.launch-text {
+	width: 300px;
+}
+
+.order {
+	background: #ecf3f8;
+	padding: 106px 0;
+	
+}
+
+input {
+	margin: 0 auto 15px;
 	display: block;
-	width: 400px;
-	line-height: 1.3em;
-	font-size: 20px;
-	margin: 0;
-	padding-top: 7px;
-	padding-bottom: 45px;
+	width: 340px;
+	height: 46px;
+	border: 1px solid #bbbbbb;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 15px;
+	border-radius: 4px;
+	padding-left: 25px;
+	width: 100%;
 }
 
-.footer {
-	padding: 20px 0;
-	background: #fff;
-}
-
-.credits {
-	color: black;
-	font-size: 18px;
-	margin: 0;
+form {
+	display:flex;
+	flex-direction: column;
+	width: 340px;
+	margin: 0 auto;
+	
 }
 
 
+.header {
+	background: rgba(78,189,254,1);
+	background: -moz-linear-gradient(left, rgba(78,189,254,1) 0%, rgba(55,143,217,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(78,189,254,1)), color-stop(100%, rgba(55,143,217,1)));
+	background: -webkit-linear-gradient(left, rgba(78,189,254,1) 0%, rgba(55,143,217,1) 100%);
+	background: -o-linear-gradient(left, rgba(78,189,254,1) 0%, rgba(55,143,217,1) 100%);
+	background: -ms-linear-gradient(left, rgba(78,189,254,1) 0%, rgba(55,143,217,1) 100%);
+	background: linear-gradient(to right, rgba(78,189,254,1) 0%, rgba(55,143,217,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4ebdfe', endColorstr='#378fd9', GradientType=1 );
+	padding-top: 60px;
+	padding-bottom: 140px;
+}
+.ection {
+	padding-left: 415px;
 
+}
 
+.section-title {
+	padding-bottom: 70px;
+}
 
+footer {
+    display: block;
+	padding: 60px 0px;
+	margin: 0px;
+	font-size: 14px;
+	text-align: center;
+    background-color: #164d7a;
+    color: white;
+    width: 100%;
+}
 
+.future {
+	padding: 103px 0;
+}
 
 
 
@@ -325,35 +390,71 @@ p {
 
 
 
+/* 992px - 1200px */
+@media screen and (max-width: 1200px) {
+	.container {
+		width: 960px;
+	}
+	.desktop {
+		width: 40%;
+	}
+}
 
+/* 768px - 992px */
+@media screen and (max-width: 992px) {
+	.container {
+		width: 720px;
+	}
+	.wrapper {
+		flex-direction: column;
+	}
+	.offer {
+		margin-top: 70px;
+		width: 100%;
+	}
+	.intro {
+		width: auto;
+	}
+	.desktop {
+		display: block;
+	    width: 100%;
+	    margin: 72px auto 0;
+	}
+	.dream {
+		flex-direction: column;
+	}
+	.times {
+		width: auto;
+		margin-bottom: 30px;
+		margin: 0 auto;
+		margin-bottom: 65px;
+	}
+}
 
+/* 576px - 768px */
+@media screen and (max-width: 768px) {
+	.container {
+		width: 540px;
+	}
+	.desktop {
+		width: 100%;
+	}
+	.input {
+		width: 100%;
+	}
+	.btn {
+		margin-left: 0;
+	    margin-top: 15px;
+	    width: 100%;
+	}
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* 320px - 576px */
+@media screen and (max-width: 576px) {
+	.container {
+		width: 90%;
+	}
+}
 
 
 
